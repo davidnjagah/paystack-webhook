@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "target": "es2017"
+  },
+  "functions": {
+    "predeploy": "npm --prefix functions run build",
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+, "index.ts"  ]
+}
