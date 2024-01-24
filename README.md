@@ -1,5 +1,3 @@
----
-
 # Uploading the Paystack Webhook to Firebase Functions
 
 ## Prerequisites
