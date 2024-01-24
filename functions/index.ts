@@ -33,7 +33,7 @@ export const paystackWebhook = async (
     next: NextFunction
     ) => {
     const prisma = new PrismaClient()
-    const secret = process.env.PAYSTACK_SECRET_KEY || "sk_live_66293a93486cfcddb5eb1fd2b81542377ccd9bcd";
+    const secret = process.env.PAYSTACK_SECRET_KEY!;
 
     const hash = createHmac('sha512', secret).update(JSON.stringify(req.body)).digest('hex');
 
